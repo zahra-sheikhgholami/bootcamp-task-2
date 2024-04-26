@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+    <section class="container block">
+      <div class="transactions">
+        <h2 class="transactions__title">لیست تراکنش ها</h2>
+        <div class="transactions__search hidden">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="جستجو تراکنش ..."
+          />
+          <img src="../assets/icons/Search.svg" class="search__icon" />
+        </div>
+      </div>
+      <div class="transactions__btn">
+        <button class="btn btn__upload">بار گذاری تراکنش ها</button>
+      </div>
+      <div class="transactions__box hidden">
+        <h3 class="transactions__box__title">لیست تراکنش های شما</h3>
+        <div class="transactions__table">
+          <div class="transactions__table__header">
+            <div class="table__col__title">ردیف</div>
+            <div class="table__col__title">نوع تراکنش</div>
+            <div class="table__col__title">
+              <span>مبلغ</span>
+              <img
+                class="sort__icon price__sort"
+                src="../assets/icons/arrow.svg"
+              />
+            </div>
+            <div class="table__col__title">شماره پیگیری</div>
+            <div class="table__col__title">
+              <span>تاریخ تراکنش</span>
+              <img class="sort__icon date__sort" src="../assets/icons/arrow.svg" />
+            </div>
+          </div>
+          <div class="transactions__table__content " >
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
